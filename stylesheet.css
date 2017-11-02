@@ -1,0 +1,249 @@
+/*Nav Bar*/
+nav{
+  border-bottom:solid  #DAA49A 3px;
+  font-weight: bold;
+  height: 57px;
+  }
+
+  header{
+  background-color: white;
+  height: 57px;
+  width:100%;
+}
+
+
+
+/* Makes Nav Bar stick */
+.navbar {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 99;
+}
+
+.navbar-brand{
+  font-size:26px;
+  padding: 0px 5px 0px 9px;
+}
+
+.nav-item{
+  font-size: 24px;
+}
+
+input[type="search"] {
+  font-style: italic;
+  border:solid  #5DB7DE 1.5px;
+}
+
+button[type="submit"] {
+  color: black;
+  font-weight:bold;
+  border:solid   #DAA49A 1.5px;
+  background: white;
+}
+
+
+
+
+
+body{     
+  color: white/*#CCD7C5*//*#EFD2CB*/; 
+  font-family: 'Indie Flower', cursive;
+  background: #5DB7DE; /*colour being used*/
+}
+
+h1{
+  margin: 70px 0px 8px 0px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 95px;
+}
+
+
+article{
+  text-align: center;
+  font-weight: 900;
+  margin: 0px 0px 70px 0px;
+  font-size: 40px;
+  color:  #CCD7C5;
+  }
+
+.wrap
+{
+  margin:10px auto 10px auto;
+  width:100%;
+  display:flex;
+  align-items:space-around;
+  max-width:1200px;
+}
+
+.tile
+{
+  width:380px;
+  height:380px;
+  margin:5px 0px 5px 0px;
+  background-color:#5DB7DE;
+  background-size:cover;
+  position:relative;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 50px -17px rgba(0,0,0,0.44);
+  overflow:hidden;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+   border-radius: 40px;
+  border-color: #DAA49A;
+  border-width: 7px;
+  border-style: solid;
+  
+}
+.tile img
+{
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  transition: all 0.4s ease-out;
+    border-radius: 30px;
+}
+.tile .text
+{
+/*   z-index:99; */
+  position:absolute;
+  padding:30px;
+  height:calc(100% - 60px);
+}
+
+.tile h2
+{
+  font-weight:bolder;
+  font-size: 40px;
+  margin:20px 0 0 0;
+  font-style:italic;
+   transform: translateX(200px);
+}
+.tile p
+{
+  font-weight:300;
+   font-size: 25px;
+  margin:20px 0 0 0;
+  line-height: 25px;
+/*   opacity:0; */
+  transform: translateX(-200px);
+  transition-delay: 0.2s;
+}
+.animate-text
+{
+  opacity:0;
+  transition: all 0.6s ease-in-out;
+}
+.tile:hover
+{
+/*   background-color:#99aeff; */
+box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+  transform:scale(1.05);
+}
+.tile:hover img
+{
+  opacity: 0.2;
+}
+.tile:hover .animate-text
+{
+  transform:translateX(0);
+  opacity:1;
+}
+
+.tile:hover span
+{
+  opacity:1;
+  transform:translateY(0px);
+}
+
+@media (max-width: 1000px) {
+  .wrap {
+   flex-direction: column;
+    width:400px;
+  }
+}
+
+.container{
+    margin: auto auto 130px auto;
+}
+
+
+
+
+
+
+
+footer{
+  background-color: white;
+    border-top:solid  #DAA49A 3px;
+  height: 170px;
+  width:100%;
+}
+
+.footer{
+  color: #CCD7C5;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+}
+
+.icons{
+  text-align:center;
+  padding: 32px 0 0 0;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-snapchat {
+    background: #fffc00;
+    color: white;
+}
+
+.fa-google {
+    background: #db3236;
+    color: white;
+}
+
+.fa-youtube {
+    background: white;
+    color: white;
+width:10px;}
+
+.fa{
+    border-radius: 40%;
+}
+
+
